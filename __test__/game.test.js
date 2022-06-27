@@ -57,7 +57,7 @@ describe('Game', () => {
       const game = new Game(p1, p2)
       expect(game.player).toBe('Salem')
       game.nextPlayer()
-      expect(game.player).toBe('Bananas')
+      expect(game.player).toBe('Nate')
     })
   })
 
