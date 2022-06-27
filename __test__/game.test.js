@@ -19,7 +19,7 @@ describe('Game', () => {
   describe('Game', () => {
     it('Initializes with two players', async () => {
       expect(game.p1).toBe('Salem')
-      expect(game.p2).toBe('Bananas')
+      expect(game.p2).toBe('Nate')
     })
 
     it('Initializes with an empty board', async () => {
@@ -35,7 +35,7 @@ describe('Game', () => {
       expect(new Game(p1, p2).player).toBe('Salem')
 
       Math.random = () => 0.6
-      expect(new Game(p1, p2).player).toBe('Bananas')
+      expect(new Game(p1, p2).player).toBe('Nate')
     })
   })
 
